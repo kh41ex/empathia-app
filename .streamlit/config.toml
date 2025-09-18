@@ -1,0 +1,20 @@
+# empathia-project/.streamlit/config.toml
+
+[theme]
+# A calming, empathetic color scheme
+primaryColor = "#9d7cbf"  # A soft purple
+backgroundColor = "#faf9fb" # A very light off-white
+secondaryBackgroundColor = "#f3eef8" # A lighter purple tint
+textColor = "#31333F" # A dark gray for text
+font = "sans serif"
+
+[runner]
+# Allows you to use powerful Streamlit elements like st.form
+magicEnabled = false
+
+[server]
+# Advanced: Enable CORS if you need to talk to external APIs
+enableCORS = false
+
+# Optional: Set a maximum file upload size (in MB)
+maxUploadSize = 10
