@@ -1,10 +1,14 @@
 # reddit_peer_llm.py
+from turtle import st
 from openai import OpenAI
 from src.utils.conversation_memory import conversation_memory
 import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Add this at the top
 
 class PeerSupportModel:
-    def __init__(self, model_id="ft:gpt-3.5-turbo-0125:personal:empathia-peer:CBmcBHZ7"):
+    def __init__(self, model_id="gpt-3.5-turbo"):
         self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         self.model_id = model_id
 
@@ -50,4 +54,17 @@ class PeerSupportModel:
             return "I'm so sorry you're going through this. I'm here to listen..."
 
 # Global instance
-peer_support_model = PeerSupportModel()
+# peer_support_model = PeerSupportModel()
+
+
+def get_peer_support_model():
+    """Get the peer support model instance (Streamlit-safe)"""
+    try:
+        if 'peer_support_model' not in st.session_state:
+            st.session_state.peer_support_model = PeerSupportModel()
+        return st.session_state.peer_support_model
+    except (AttributeError, RuntimeError):
+        # Fallback for threads: use module-level cache
+        if not hasattr(get_peer_support_model, "_instance"):
+            get_peer_support_model._instance = PeerSupportModel()
+        return get_peer_support_model._instance

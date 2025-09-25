@@ -147,9 +147,15 @@ class PsychologyBookExpert:
 
 def get_psychology_expert():
     """Get the psychology expert instance (Streamlit-safe)"""
-    if 'psychology_expert' not in st.session_state:
-        st.session_state.psychology_expert = PsychologyBookExpert()
-    return st.session_state.psychology_expert
+    try:
+        if 'psychology_expert' not in st.session_state:
+            st.session_state.psychology_expert = PsychologyBookExpert()
+        return st.session_state.psychology_expert
+    except (AttributeError, RuntimeError):
+        # Fallback for threads: use module-level cache
+        if not hasattr(get_psychology_expert, "_instance"):
+            get_psychology_expert._instance = PsychologyBookExpert()
+        return get_psychology_expert._instance      
 
 # Global instance
-psychology_expert = PsychologyBookExpert()
+# psychology_expert = PsychologyBookExpert()

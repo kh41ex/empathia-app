@@ -304,5 +304,429 @@
       "role": "assistant",
       "message": "I hear you. It's okay to feel empty and lost. Grief takes time, and it's a difficult journey. Be gentle with yourself and allow space for your emotions. You're not alone in this.\n\n\ud83e\udde0 It's natural to feel empty after losing a pet. Research suggests that journaling about your feelings can help process emotions and find moments of peace. Try writing down your thoughts or memories of your pet to honor their impact on your life. Remember, healing takes time, so be patient with yourself as you navigate this difficult journey.\n\nHow have you been coping with the memories of your beloved pet?"
     }
+  ],
+  "d554e9c5-6499-493f-a9b4-bfe83b51e670": [
+    {
+      "role": "user",
+      "message": "hello"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    },
+    {
+      "role": "user",
+      "message": "I am feeling better, but I want to have some expert advice"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    },
+    {
+      "role": "user",
+      "message": "expert advice please"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    }
+  ],
+  "49529fa7-be46-4e15-86df-579ea75e2938": [
+    {
+      "role": "user",
+      "message": "hello, i need expert advice"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    },
+    {
+      "role": "user",
+      "message": "expert advice"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    },
+    {
+      "role": "user",
+      "message": "I need advice"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\n\ud83e\udde0 It's natural to feel overwhelmed after losing a pet. Research suggests writing about your feelings can help process grief. Try journaling to express your emotions and memories. Be patient with yourself as you navigate this difficult time.\n\nHow are you feeling now?"
+    }
+  ],
+  "804b5bef-d63f-47e9-8104-4d4e826b77c8": [
+    {
+      "role": "user",
+      "message": "hello"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    },
+    {
+      "role": "user",
+      "message": "I'm feeling a bit better, but I don't sleep I need help, expert advice"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    },
+    {
+      "role": "user",
+      "message": "expert advice"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    }
+  ],
+  "9e36dbbf-090a-42dd-ab02-14236ce597b7": [
+    {
+      "role": "user",
+      "message": "hi"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    },
+    {
+      "role": "user",
+      "message": "not good need help"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen to you.\n\nHow are you feeling now?"
+    }
+  ],
+  "default": [
+    {
+      "role": "user",
+      "message": "I'm feeling really sad about losing my dog"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry to hear about the loss of your dog. It's completely normal to feel sad and to grieve. Take all the time you need to process your emotions. Your feelings are valid and I'm here to support you through this difficult time."
+    }
+  ],
+  "0a2e8970-7cda-4c3a-9d0b-84920fa813be": [
+    {
+      "role": "user",
+      "message": "i need advice"
+    }
+  ],
+  "97656867-c173-4cde-a66e-6f5d79e4ee9d": [
+    {
+      "role": "assistant",
+      "message": "I'm here for you. It's okay to feel lost and confused. Take your time to grieve and remember to be kind to yourself. You're not alone in this journey of healing."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here for you. It's okay to feel lost and confused. Take your time to grieve and remember to be kind to yourself. You're not alone in this journey of healing.\n\nHow have you been practicing self-care and nurturing yourself through this process?"
+    },
+    {
+      "role": "user",
+      "message": "need advice, suicide"
+    },
+    {
+      "role": "user",
+      "message": "need advice, suicide"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen and support you during this difficult time. Your feelings are valid and important. You are not alone in your struggles. Please remember that there is always help available and people who care about you. You matter."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen and support you during this difficult time. Your feelings are valid and important. You are not alone in your struggles. Please remember that there is always help available and people who care about you. You matter.\n\n\ud83e\udde0 It's natural to feel overwhelmed during this difficult time. Research shows talking to a therapist can provide valuable support. Reach out to a mental health professional who can help you navigate these intense emotions. Remember, seeking help is a brave step towards healing. Be patient with yourself.\n\nHow do you find moments of peace and comfort during challenging times?"
+    }
+  ],
+  "dc9aa0e6-cdb2-4bcc-a3f0-a5da2c77ec0b": [
+    {
+      "role": "assistant",
+      "message": "I'm truly sorry for the emptiness you're feeling without your cat. It's okay to miss their presence and feel their absence deeply. Take your time to grieve and remember the love you shared. I'm here to listen whenever you need to talk."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm truly sorry for the emptiness you're feeling without your cat. It's okay to miss their presence and feel their absence deeply. Take your time to grieve and remember the love you shared. I'm here to listen whenever you need to talk.\n\n\ud83e\udde0 It's common to feel a sense of emptiness after losing a pet like your cat. Research indicates that engaging in activities that bring you comfort, such as creating a special corner with your cat's belongings or photos, can help ease this feeling of emptiness. Try incorporating small reminders of your cat's presence in your daily routine to provide a sense of connection. Be gentle with yourself as you adjust to this new normal.\n\nHow are you finding ways to keep your cat's memory alive at home?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss of your rabbit. Grieving takes time, and it's completely normal to still feel the pain months later. It's okay to take all the time you need to process your emotions and honor your rabbit's memory. I'm here to support you."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss of your rabbit. Grieving takes time, and it's completely normal to still feel the pain months later. It's okay to take all the time you need to process your emotions and honor your rabbit's memory. I'm here to support you.\n\n\ud83e\udde0 It's natural to still feel the pain of your rabbit's loss months later. Research shows that the intensity and duration of grief can vary for each individual. Try journaling about your favorite memories with your rabbit to honor their life and process your emotions. Grief doesn't have a set timeline, so be patient with yourself as you navigate this difficult time.\n\nHow have you been coping with the loss of your beloved rabbit?"
+    }
+  ],
+  "37998b47-1775-4ef4-acac-f39447a716f3": [
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your pain. It's common to feel guilt, but remember you provided love and care throughout your cat's life. Your presence at the end doesn't define your love for her. Grief is a complex journey, be gentle with yourself."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your pain. It's common to feel guilt, but remember you provided love and care throughout your cat's life. Your presence at the end doesn't define your love for her. Grief is a complex journey, be gentle with yourself.\n\nHow have you been finding ways to honor and remember your cat?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grief doesn't have a timeline, and it's okay to still be struggling months later. Your feelings are valid, and it's important to allow yourself time to heal at your own pace. Take care of yourself during this difficult time."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grief doesn't have a timeline, and it's okay to still be struggling months later. Your feelings are valid, and it's important to allow yourself time to heal at your own pace. Take care of yourself during this difficult time.\n\n\ud83e\udde0 It's natural to still feel deep grief months after losing a pet. Research shows the intensity and duration of grief can vary widely. Try creating a memory box with your rabbit's favorite toys or photos. This tangible reminder can help you honor your bond while gradually adjusting to the loss. Be patient with yourself as you navigate this process.\n\nHow have you been coping with the loss of your rabbit each day?"
+    }
+  ],
+  "d065a3ba-30b8-48c7-b906-f7ed4b9b339f": [
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. It's clear how much you loved your dog. Remember, you made a difficult decision out of love and compassion. Take time to grieve and be kind to yourself during this difficult time."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. It's clear how much you loved your dog. Remember, you made a difficult decision out of love and compassion. Take time to grieve and be kind to yourself during this difficult time.\n\nHow have you been coping with the loss of your beloved dog?"
+    },
+    {
+      "role": "user",
+      "message": "My kids don\u2019t seem sad about the hamster\u2019s death. Should I be worried?"
+    },
+    {
+      "role": "user",
+      "message": "My kids don\u2019t seem sad about the hamster\u2019s death. Should I be worried?"
+    },
+    {
+      "role": "assistant",
+      "message": "I understand your concern. Everyone processes grief differently, including children. It's normal for them to respond in their own unique way. Encourage open communication and offer comfort during this time. Your care and sensitivity are important."
+    },
+    {
+      "role": "assistant",
+      "message": "I understand your concern. Everyone processes grief differently, including children. It's normal for them to respond in their own unique way. Encourage open communication and offer comfort during this time. Your care and sensitivity are important.\n\n\ud83e\udde0 It's natural for children to express grief differently. Research shows kids may not fully grasp death's permanence. Encourage open conversations and provide opportunities for them to express emotions through drawing or storytelling. Be patient with their unique grieving process.\n\nHow have you been helping your kids navigate their feelings about the loss?"
+    }
+  ],
+  "05b3bcb3-bb59-4b05-96f2-36d7bfeb9065": [
+    {
+      "role": "user",
+      "message": "hello"
+    },
+    {
+      "role": "user",
+      "message": "hello"
+    },
+    {
+      "role": "assistant",
+      "message": "Hello. I'm here for you. Grief is a natural response to loss, and it's okay to feel a mix of emotions. Your feelings are valid, and I'm here to listen and support you through this difficult time."
+    },
+    {
+      "role": "assistant",
+      "message": "Hello. I'm here for you. Grief is a natural response to loss, and it's okay to feel a mix of emotions. Your feelings are valid, and I'm here to listen and support you through this difficult time.\n\nHow have you been taking care of yourself during this challenging time?"
+    }
+  ],
+  "a13d6847-04c2-4777-8cd7-664881be235b": [
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grieving takes time, and everyone processes it differently. It's completely normal to still be struggling. Allow yourself to feel your emotions and be kind to yourself as you heal. I'm here for you."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grieving takes time, and everyone processes it differently. It's completely normal to still be struggling. Allow yourself to feel your emotions and be kind to yourself as you heal. I'm here for you.\n\n\ud83e\udde0 It's natural to feel prolonged grief after losing a pet. Research suggests creating a memory box with photos and favorite toys can help honor your rabbit's memory while gradually adjusting to the loss. Be patient with yourself as healing takes time.\n\nHow do you feel your rabbit has impacted your life overall?"
+    }
+  ],
+  "7c94b0ff-eb38-4393-8340-9a39a479e8be": [
+    {
+      "role": "assistant",
+      "message": "Hello, I'm here for you. It's okay to feel overwhelmed with grief. Your emotions are valid, and I'm here to listen and support you through this difficult time. Take your time to process your feelings."
+    },
+    {
+      "role": "assistant",
+      "message": "Hello, I'm here for you. It's okay to feel overwhelmed with grief. Your emotions are valid, and I'm here to listen and support you through this difficult time. Take your time to process your feelings.\n\nHow have you been finding ways to take care of yourself recently?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grieving takes time, and it's different for everyone. Your feelings are completely normal and valid. Take all the time you need to honor your rabbit's memory and process your emotions. I'm here for you."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grieving takes time, and it's different for everyone. Your feelings are completely normal and valid. Take all the time you need to honor your rabbit's memory and process your emotions. I'm here for you.\n\n\ud83e\udde0 It's natural to feel prolonged grief after losing a pet. Research shows the intensity and duration of pet loss grief can vary widely. Try creating a memory box with your rabbit's favorite toys or photos. This can help you honor your bond while gradually adjusting to the loss. Be patient with yourself as you navigate this process.\n\nHow have you been finding moments of comfort or peace during this time?"
+    }
+  ],
+  "78e9d3a4-b6b0-4a5e-91f0-a8d6f2e23cdd": [
+    {
+      "role": "assistant",
+      "message": "Hello, I'm here for you. It's okay to feel however you're feeling right now. Your emotions are valid. I'm here to listen and support you through this difficult time."
+    },
+    {
+      "role": "assistant",
+      "message": "Hello, I'm here for you. It's okay to feel however you're feeling right now. Your emotions are valid. I'm here to listen and support you through this difficult time.\n\nHow are you finding ways to take care of yourself during this time?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grief doesn't have a timeline, and it's completely normal to still feel this way months later. It's okay to take all the time you need to heal. I'm here for you whenever you need to talk."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grief doesn't have a timeline, and it's completely normal to still feel this way months later. It's okay to take all the time you need to heal. I'm here for you whenever you need to talk.\n\n\ud83e\udde0 It's natural to feel prolonged grief after losing a beloved pet like your rabbit. Research shows that the bond we form with our pets can be incredibly strong, leading to deep feelings of loss. Try creating a memory box or journal to honor your rabbit's memory. Reflecting on the happy moments you shared can help in the healing process. Be patient with yourself as you navigate this difficult time.\n\nHow are you finding comfort or solace in your memories of your rabbit?"
+    }
+  ],
+  "299886ab-4566-4c40-8274-46da362c867c": [
+    {
+      "role": "user",
+      "message": "hello"
+    },
+    {
+      "role": "user",
+      "message": "hello"
+    },
+    {
+      "role": "assistant",
+      "message": "Hello. I'm here for you. It's okay to feel the way you do. Grief is a natural part of life. Take your time to process and remember that it's okay to seek support when you need it."
+    },
+    {
+      "role": "assistant",
+      "message": "Hello. I'm here for you. It's okay to feel the way you do. Grief is a natural part of life. Take your time to process and remember that it's okay to seek support when you need it.\n\nHow have you been taking care of yourself during this time?"
+    }
+  ],
+  "ac5dd9c3-3636-490a-80e3-0974ef0dbc90": [
+    {
+      "role": "user",
+      "message": "Hello"
+    },
+    {
+      "role": "user",
+      "message": "Hello"
+    },
+    {
+      "role": "assistant",
+      "message": "Hello, I'm here for you. It's okay to feel overwhelmed with grief. Your emotions are valid and you're not alone. Take your time to process and remember to be kind to yourself during this difficult time."
+    },
+    {
+      "role": "assistant",
+      "message": "Hello, I'm here for you. It's okay to feel overwhelmed with grief. Your emotions are valid and you're not alone. Take your time to process and remember to be kind to yourself during this difficult time.\n\nHow have you been finding moments of comfort or support lately?"
+    }
+  ],
+  "5374fb5a-d6a8-4235-a213-3b8614a515c3": [
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal?"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grieving takes time, and it's completely normal to still be struggling months later. Remember to be gentle with yourself and allow yourself to feel your emotions. I'm here to support you through this difficult time."
+    }
+  ],
+  "76ec58af-2737-4763-9f19-a9fca16b6853": [
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal? "
+    },
+    {
+      "role": "user",
+      "message": "It\u2019s been months since my rabbit died, and I still can\u2019t move on. Is this normal? "
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grieving takes time, and it's different for everyone. Your feelings are completely normal and valid. Take all the time you need to process your emotions. I'm here to support you."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry for your loss. Grieving takes time, and it's different for everyone. Your feelings are completely normal and valid. Take all the time you need to process your emotions. I'm here to support you.\n\n\ud83e\udde0 It's natural to feel prolonged grief after losing a pet. Research suggests that the intensity and duration of pet loss grief can vary. Try creating a memory box with your rabbit's favorite toys or photos. This can provide a tangible way to honor your bond while gradually adjusting to the loss. Be patient with yourself as you navigate this process.\n\nHow have your daily routines or habits changed since your rabbit passed away?"
+    }
+  ],
+  "bf5975b6-c7e6-4743-adae-1eab852f5570": [
+    {
+      "role": "assistant",
+      "message": "It is completely normal to feel empty after experiencing loss or grief. Your feelings are valid and it's important to give yourself time and space to process them. Remember, healing is a journey and it's okay to take it one step at a time."
+    },
+    {
+      "role": "assistant",
+      "message": "It is completely normal to feel empty after experiencing loss or grief. Your feelings are valid and it's important to give yourself time and space to process them. Remember, healing is a journey and it's okay to take it one step at a time.\n\nWhat do you think might help you feel a sense of fulfillment?"
+    },
+    {
+      "role": "user",
+      "message": "suicide|self harm|end it all|can\\'t go on|want to die|not want to live"
+    },
+    {
+      "role": "user",
+      "message": "suicide|self harm|end it all|can\\'t go on|want to die|not want to live"
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry to hear you're feeling this way. Your pain is valid, and it's important to reach out for help. You are not alone, and there are people who care about you. Please consider talking to a professional or a loved one for support."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm so sorry to hear you're feeling this way. Your pain is valid, and it's important to reach out for help. You are not alone, and there are people who care about you. Please consider talking to a professional or a loved one for support.\n\nWhat activities or hobbies have brought you comfort during difficult times?"
+    }
+  ],
+  "72085e39-4ae6-492e-bcf0-f63a5730d4a2": [
+    {
+      "role": "assistant",
+      "message": "I'm here to listen and support you through this difficult time. Your feelings are valid, and it's important to reach out for help. You're not alone in this, and I care about your well-being. Let's talk about how you're feeling."
+    },
+    {
+      "role": "assistant",
+      "message": "I'm here to listen and support you through this difficult time. Your feelings are valid, and it's important to reach out for help. You're not alone in this, and I care about your well-being. Let's talk about how you're feeling.\n\n\ud83e\udde0 It's natural to feel overwhelmed with guilt and helplessness after a pet loss. Research shows self-compassion can ease these emotions. Try writing a letter to yourself from your pet's perspective, expressing love and forgiveness. Be patient with yourself as you navigate these challenging emotions.\n\nHow have you been finding moments of self-compassion during this time?"
+    },
+    {
+      "role": "user",
+      "message": "feel guilty, need help, suicide!"
+    },
+    {
+      "role": "user",
+      "message": "feel guilty, need help, suicide!"
+    },
+    {
+      "role": "assistant",
+      "message": "I hear you and I'm here for you. Your feelings are valid and it's important to talk about them. You're not alone in this, and there is support available to help you through this difficult time. Your well-being matters."
+    },
+    {
+      "role": "assistant",
+      "message": "I hear you and I'm here for you. Your feelings are valid and it's important to talk about them. You're not alone in this, and there is support available to help you through this difficult time. Your well-being matters.\n\n\ud83e\udde0 It's natural to feel overwhelmed with guilt and helplessness after losing a pet. Research shows that self-compassion can help ease these emotions. Try writing yourself a compassionate letter, acknowledging your pain without self-blame. Be patient with yourself as you navigate these challenging feelings.\n\nHow have you been taking care of yourself during this challenging time?"
+    }
   ]
 }

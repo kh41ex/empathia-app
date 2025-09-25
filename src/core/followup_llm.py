@@ -1,6 +1,10 @@
 # followup_llm.py
+from turtle import st
 from openai import OpenAI
 import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Add this at the top
 
 class FollowUpModel:
     def __init__(self):
@@ -44,4 +48,17 @@ class FollowUpModel:
     
 
 # Global instance
-follow_up_model = FollowUpModel()
+# follow_up_model = FollowUpModel()
+
+
+def get_follow_up_model():
+    """Get the follow-up model instance"""
+    try:
+        if 'follow_up_model' not in st.session_state:
+            st.session_state.follow_up_model = FollowUpModel()
+        return st.session_state.follow_up_model
+    except (AttributeError, RuntimeError):
+        # Fallback for threads: use module-level cache
+        if not hasattr(get_follow_up_model, "_instance"):
+            get_follow_up_model._instance = FollowUpModel()
+        return get_follow_up_model._instance

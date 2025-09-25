@@ -4,7 +4,7 @@ import threading
 import traceback
 import queue
 import streamlit as st
-from src.core.psychology_rag import psychology_expert
+from src.core.psychology_rag import get_psychology_expert
 
 # Thread-safe queue for async responses
 expert_response_queue = queue.Queue()
@@ -14,9 +14,9 @@ def fetch_expert_async(user_input: str, debug: bool = False):
     try:
         if debug:
             print(f"DEBUG [expert.py]: Starting expert fetch for: {user_input}")
-        
-        expert_response = psychology_expert.get_expert_response(user_input)
-        
+
+        expert_response = get_psychology_expert().get_expert_response(user_input)
+
         if debug:
             print(f"DEBUG [expert.py]: Expert fetch successful: {expert_response[:100]}...")
         
@@ -76,7 +76,7 @@ def handle_expert_queue(debug: bool = False):
 
 def fetch_expert_sync(user_input: str) -> str:
     """Synchronous expert fetch (fallback)."""
-    return psychology_expert.get_expert_response(user_input)
+    return get_psychology_expert().get_expert_response(user_input)
 
 def get_cached_expert_response() -> str:
     """Get pre-fetched expert response if available"""

@@ -5,9 +5,9 @@ import streamlit as st
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
-from src.core.psychology_rag import PsychologyBookExpert, get_psychology_expert
-from src.core.peer_support_llm import peer_support_model
-from src.core.followup_llm import follow_up_model
+from src.core.psychology_rag import get_psychology_expert
+from src.core.peer_support_llm import get_peer_support_model
+from src.core.followup_llm import get_follow_up_model
 from src.utils.triggers import calculate_advice_priority
 from src.utils.conversation_memory import conversation_memory
 
@@ -15,39 +15,39 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
 # Thread-safe queues
-peer_queue = queue.Queue()
-expert_queue = queue.Queue()
-followup_queue = queue.Queue()
+#peer_queue = queue.Queue()
+#expert_queue = queue.Queue()
+#followup_queue = queue.Queue()
 
-def generate_peer_response_async(user_input: str, session_id: str, debug: bool = False):
+def generate_peer_response_async(user_input: str, session_id: str, debug: bool = False, output_queue: queue.Queue = None):
     """Generate peer support in background thread."""
     try:
-        response = peer_support_model.generate_response(user_input, session_id)
-        peer_queue.put(("success", response))
+        response = get_peer_support_model().generate_response(user_input, session_id)
+        output_queue.put(("success", response))
         if debug:
             print(f"DEBUG: Peer response ready")
     except Exception as e:
-        peer_queue.put(("error", f"Peer support error: {e}"))
+        output_queue.put(("error", f"Peer support error: {e}"))
 
-def generate_expert_response_async(user_input: str, session_id: str, debug: bool = False):
+def generate_expert_response_async(user_input: str, session_id: str, debug: bool = False, output_queue: queue.Queue = None):
     """Generate expert advice in background thread."""
     try:
         psychology_expert = get_psychology_expert()
         response = psychology_expert.get_expert_response(user_input, session_id)
-        expert_queue.put(("success", response))
+        output_queue.put(("success", response))
         if debug:
             print(f"DEBUG: Expert response ready")
     except Exception as e:
-        expert_queue.put(("error", f"Expert error: {e}"))
+        output_queue.put(("error", f"Expert error: {e}"))
 
-def generate_followup_question_async(user_input: str, peer_response: str, expert_response: str, session_id: str, debug: bool = False):
+def generate_followup_question_async(user_input: str, peer_response: str, expert_response: str, session_id: str, debug: bool = False, output_queue: queue.Queue = None):
     """Generate follow-up question in background thread."""
     try:
 
         # Get conversation history for context-aware follow-up questions
         history = conversation_memory.get_formatted_history(session_id)
 
-        response = follow_up_model.generate_follow_up_question(
+        response = get_follow_up_model().generate_follow_up_question(
             user_input=user_input, 
             peer_response=peer_response, 
             expert_response=expert_response,
@@ -55,12 +55,12 @@ def generate_followup_question_async(user_input: str, peer_response: str, expert
         )
 
         question = response.strip().replace('"', '').replace('?', '') + '?'
-        followup_queue.put(("success", question))
+        output_queue.put(("success", question))
         if debug:
             print(f"DEBUG: Follow-up question ready: {question}")
             
     except Exception as e:
-        followup_queue.put(("error", "What's coming up for you as you share this?"))
+        output_queue.put(("error", "What's coming up for you as you share this?"))
 
 
 
@@ -71,12 +71,18 @@ def orchestrate_cascading_response(user_input: str, session_id: str = "default",
     Orchestrates the cascading async response generation.
     Returns: {'peer': response, 'expert': response, 'followup': question}
     """
+    # Thread-safe queues
+    peer_queue = queue.Queue()
+    expert_queue = queue.Queue()
+    followup_queue = queue.Queue()
+
+
     results = {'peer': None, 'expert': None, 'followup': None}
     
     # 1. Start peer support immediately
     peer_thread = threading.Thread(
         target=generate_peer_response_async, 
-        args=(user_input, session_id, debug),
+        args=(user_input, session_id, debug, peer_queue),
         daemon=True
     )
     peer_thread.start()
@@ -85,10 +91,15 @@ def orchestrate_cascading_response(user_input: str, session_id: str = "default",
     advice_priority = calculate_advice_priority(user_input, "")
     needs_expert = advice_priority > 0.2
     
+    print(f"🔍 DEBUG: User input: '{user_input}'")
+    print(f"🔍 DEBUG: Advice priority: {advice_priority}")
+    print(f"🔍 DEBUG: Needs expert? {needs_expert}")
+
+
     if needs_expert:
         expert_thread = threading.Thread(
             target=generate_expert_response_async,
-            args=(user_input, session_id, debug),
+            args=(user_input, session_id, debug, expert_queue),
             daemon=True
         )
         expert_thread.start()
@@ -120,7 +131,7 @@ def orchestrate_cascading_response(user_input: str, session_id: str = "default",
     # 5. Start follow-up question generation with actual expert response (if available)
     followup_thread = threading.Thread(
         target=generate_followup_question_async,
-        args=(user_input, results['peer'], results['expert'] or "", session_id, debug),  # Include expert response
+        args=(user_input, results['peer'], results['expert'] or "", session_id, debug, followup_queue),
         daemon=True
     )
     followup_thread.start()
