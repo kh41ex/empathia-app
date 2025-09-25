@@ -1,5 +1,5 @@
 # reddit_peer_llm.py
-from turtle import st
+import streamlit as st
 from openai import OpenAI
 from src.utils.conversation_memory import conversation_memory
 import os
