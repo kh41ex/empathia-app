@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()  # Add this at the top
 
 class PeerSupportModel:
-    def __init__(self, model_id="gpt-3.5-turbo"):
+    def __init__(self, model_id="ft:gpt-3.5-turbo-0125:personal:empathia-peer:CBmcBHZ7"):
         self.client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         self.model_id = model_id
 
