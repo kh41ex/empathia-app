@@ -105,7 +105,7 @@ if 'messages' not in st.session_state:
 set_local_background()
 
 st.set_page_config(page_title="EMPATHIA - Pet Loss Support", page_icon="🐾")
-st.title("🐾 EMPATHIA")
+st.title("🐾 EMPETHIA")
 st.markdown("Welcome. This is a safe space to express your feelings about the loss of your beloved pet.")
 
 # --- Debug sidebar ---
